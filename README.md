@@ -1,50 +1,50 @@
-# Welcome to your Expo app 👋
+# 🍋 Little Lemon App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+- The application is a React Native Expo Food app.
+- Users will be capable of signing up on the Little Lemon restaurant app.
+- Users will have to go through a registration process.
+- Once they successfully complete that phase, they are redirected to a home screen.
+- Home screen will represent the landing screen after completing the onboarding flow, displaying a header, a banner with a search bar and a list of menu items where a user can filter each categories.
+- User can also customize their name, email, photo and and other user preferences through a Profile Screen.
+- Profile screen also contains four checkboxes enable specific email notifications, like order status, password changes,special offers, and newsletters.
+- Use AsyncStorage module to preserve the chosen preferences even when the user quits the application
+- When clicking the Logout button, user will redirect back to login page, clearing all data saved from Profile.
+- Use SQLite Database to populate, query and filter menu items.
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### How to use the project
 
 ```bash
-npm run reset-project
+npm install && npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+##### Then, a QR Code wil appear on your terminal.
 
-## Learn more
+##### On IOS Scan QR code through Camera app.
 
-To learn more about developing your project with Expo, look at the following resources:
+##### Or Locally using:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm run ios
+```
 
-## Join the community
+##### On Android : Scan QR code through Expo Go app.
 
-Join our community of developers creating universal apps.
+##### Or Locally using:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm run android
+```
+
+### Screenshot
+
+![final_mockup](https://user-images.githubusercontent.com/108392678/217717918-a6f83c94-c1ab-4796-903e-388b9a67cdd9.jpg)
+![Onboarding](https://user-images.githubusercontent.com/108392678/217715066-19026169-ab51-450e-b21c-cc925940d03e.jpg)
+![Profile and Home](https://user-images.githubusercontent.com/108392678/217715079-d66eb960-f5cf-4cdf-8f33-b45b320fca7e.jpg)
+
+### Useful resources
+
+- [React Native Docs (StyleSheet) ](https://reactnative.dev/docs/stylesheet) - This helped me for all the neccessary React Native styles. I really liked their documentation and will use it going forward.
+- [ImagePicker API](https://docs.expo.dev/versions/latest/sdk/imagepicker/) - This helped me for creating an option for user to select profile picture on their devices.
+- [SQLite](https://docs.expo.dev/versions/latest/sdk/sqlite/) - This helped me for saving menu items.
+- [Async Storage](https://react-native-async-storage.github.io/async-storage/docs/api/) - This helped me for saving user settings.
+- [ContextAPI](https://beta.reactjs.org/reference/react/createContext)- This helped me for creating a authentication context for login.
